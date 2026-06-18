@@ -5,30 +5,82 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20">
+            
 
-            <Label Text="Goedemorgen..."
-                   FontSize="24"
-                   FontAttributes="Bold"/>
+            <Grid BackgroundColor="Purple"
+                    HeightRequest="150"
+                    Padding="20">
 
-            <Border Padding="15">
+                <Label Text=""
+                         FontSize="24"
+                         TextColor="White"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Start"/>
+
+                <Label Text="Matrix Inc"
+                         FontSize="20"
+                         FontAttributes="Bold"
+                         TextColor="White"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center"/>
+
+                <Label Text=""
+                         FontSize="22"
+                         TextColor="White"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"/>
+            </Grid>
+
+            
+            <VerticalStackLayout Padding="20,0,20,0">
+                <Label Text="Goedendag"
+                       FontSize="16"
+                       FontAttributes="Bold"/>
+
+                <Label Text="Klaar voor je route vandaag?"
+                       FontSize="14"
+                       TextColor="Gray"/>
+
+
+            </VerticalStackLayout>
+
+            <Border Margin="20"
+                    Padding="20"
+                    BackgroundColor="White"
+                    Stroke="LightGray">
 
                 <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15" />
+                    <RoundRectangle CornerRadius="15"/>
                 </Border.StrokeShape>
                 
-                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto">
-                    <Label Text="Levering" Grid.Row="0"/>
-                    <Label Text="31" Grid.Row="0" Grid.Column="1" HorizontalOptions="End"/>
+                <Grid>
+                    <Grid RowDefinitions="Auto"
+                          ColumnDefinitions="*,Auto" >
 
-                    <Label Text="Pakketten" Grid.Row="1"/>
-                    <Label Text="106" Grid.Row="1" Grid.Column="1" HorizontalOptions="End"/>
 
-                    <Label Text="Volgende klant" Grid.Row="2"/>
-                    <Label Text="Aflevering 5&#10;Park 12" Grid.Row="2" Grid.Column="1" HorizontalOptions="End"/>
+                    <Label Text="Leveringen"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"/>
+
+                        <Label Text="Pakketten"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.Column="1"/>
+
+                        <Label Text="Verwachte duur"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               Grid.Row="2"/>
+
+
+                    </Grid>
                 </Grid>
+
             </Border>
 
-            <Button Text="Pakketten laden"
+                <Button Text="Pakketten laden"
                     HeightRequest="55"
                     CornerRadius="15"
                     Clicked="GoToScanPage"/>
