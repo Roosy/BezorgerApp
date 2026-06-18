@@ -1,0 +1,38 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BezorgerApp.MainPage"
+             Title="Matrix Inc">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label Text="Goedemorgen..."
+                   FontSize="24"
+                   FontAttributes="Bold"/>
+
+            <Border Padding="15">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto">
+                    <Label Text="Levering" Grid.Row="0"/>
+                    <Label Text="31" Grid.Row="0" Grid.Column="1" HorizontalOptions="End"/>
+
+                    <Label Text="Pakketten" Grid.Row="1"/>
+                    <Label Text="106" Grid.Row="1" Grid.Column="1" HorizontalOptions="End"/>
+
+                    <Label Text="Volgende klant" Grid.Row="2"/>
+                    <Label Text="Aflevering 5&#10;Park 12" Grid.Row="2" Grid.Column="1" HorizontalOptions="End"/>
+                </Grid>
+            </Border>
+
+            <Button Text="Pakketten laden"
+                    HeightRequest="55"
+                    CornerRadius="15"
+                    Clicked="GoToScanPage"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
