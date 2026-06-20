@@ -85,6 +85,11 @@
                     CornerRadius="15"
                     Clicked="GoToScanPage"/>
 
+            <Button Text="Toon levering"
+                    HeightRequest="55"
+                    CornerRadius="15"
+                    Clicked="GoToDeliveryRegistration"/>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

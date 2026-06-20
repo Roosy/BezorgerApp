@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BezorgerApp.DeliveryRegistration"
+             Title="Levering Registreren">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <VerticalStackLayout Padding="0">
+            <Label 
+            Text="Kerkstraat 12"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label
+            Text="6131AX Sittard"
+            FontSize="10"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+            <Label
+            Text="Klant: Jan Jansen"
+            FontSize="12"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        
+        <!--listview voor pakketjes list als we een db hebben hiervoor?-->
+
+		<Button
+            Text="Pakketjes"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+			Clicked="GoToDeliveryPackages"></Button>
+
+        <Button
+            Text="Pakketjes scannen"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="GoToPackageScan"></Button>
+
+        <!--Deze in een grid (en betere kleuren skull emoji):-->
+        
+        <Button
+            Text="Levering Concluderen"
+            BackgroundColor="Green"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Clicked="GoToDeliveryComplete">></Button>
+
+        <Button
+            Text="Levering niet gelukt"
+            BackgroundColor="Red"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Clicked="GoToDeliveryNotComplete"></Button>
+
+    </VerticalStackLayout>
+</ContentPage> 
