@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BezorgerApp.Views.ProbleemMeldingPage"
              xmlns:models="clr-namespace:BezorgerApp.Models"
-             Title="Probleem melding"
-             Shell.NavBarIsVisible="False">
-    <Grid RowDefinitions="Auto,*"
+             Title="Probleem melding">
 
-        <!-- Inhoud -->
+    <Grid RowDefinitions="Auto,*">
+
         <ScrollView Grid.Row="1">
 
             <VerticalStackLayout

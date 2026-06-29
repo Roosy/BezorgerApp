@@ -22,5 +22,13 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="GoToDeliveryRegistration"></Button>
+
+        <!-- deze knop moet verwijderd worden, en de "volgende levering" vervangen-->
+        <Button
+            Text="Rit Afronden"
+            Margin="8"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="GoToRitAfrondenPage"></Button>
     </VerticalStackLayout>
 </ContentPage>

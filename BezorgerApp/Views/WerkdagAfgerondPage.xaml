@@ -20,9 +20,9 @@
         </Border>
 
         <Button Text="Uitloggen"
-                Command="{Binding UitloggenCommand}"
                 BackgroundColor="Gray"
-                TextColor="White"/>
+                TextColor="White"
+                Clicked="GoToMainPage"/>
 
     </VerticalStackLayout>
 

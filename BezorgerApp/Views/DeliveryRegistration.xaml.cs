@@ -1,6 +1,6 @@
 using BezorgerApp.Views;
 
-namespace BezorgerApp;
+namespace BezorgerApp.Views;
 
 public partial class DeliveryRegistration : ContentPage
 {

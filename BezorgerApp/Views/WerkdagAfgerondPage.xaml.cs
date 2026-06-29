@@ -6,4 +6,10 @@ public partial class WerkdagAfgerondPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private async void GoToMainPage(object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("//MainPage");
+	}
+		
 }

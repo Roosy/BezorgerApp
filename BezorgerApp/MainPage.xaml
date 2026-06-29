@@ -89,7 +89,12 @@
                     HeightRequest="55"
                     CornerRadius="15"
                     Clicked="GoToDeliveryRegistration"/>
-
+            
+            <Button Text="Werkdag Afsluiten"
+                    HeightRequest="55"
+                    CornerRadius="15"
+                    Clicked="GoToWerkdagAfgerondPage"/>
+                    
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

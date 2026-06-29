@@ -1,4 +1,6 @@
-﻿namespace BezorgerApp;
+﻿using BezorgerApp.Views;
+
+namespace BezorgerApp;
 
 public partial class MainPage : ContentPage
 {
@@ -15,5 +17,10 @@ public partial class MainPage : ContentPage
     private async void GoToDeliveryRegistration(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new DeliveryRegistration());
+    }
+
+    private async void GoToWerkdagAfgerondPage(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new WerkdagAfgerondPage());
     }
 }
