@@ -5,39 +5,7 @@
              xmlns:models="clr-namespace:BezorgerApp.Models"
              Title="Probleem melding"
              Shell.NavBarIsVisible="False">
-    <Grid RowDefinitions="Auto,*">
-        
-        <!-- Header -->
-        <Grid
-            BackgroundColor="#2b9e49"
-            Padding="15,50,15,15">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="40"/>
-            </Grid.ColumnDefinitions>
-
-            <ImageButton
-                BackgroundColor="Transparent"
-                Clicked="BackClicked">
-                <ImageButton.Source>
-                    <FontImageSource
-                    Glyph="&#xE5CB;"
-                    FontFamily="MaterialIcons"
-                    Color="White"
-                    Size="28"/>
-                </ImageButton.Source>
-            </ImageButton>
-
-            <Label
-                Grid.Column="1"
-                Text="Probleem melden"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="20"
-                HorizontalOptions="Center"/>
-        </Grid>
+    <Grid RowDefinitions="Auto,*"
 
         <!-- Inhoud -->
         <ScrollView Grid.Row="1">
