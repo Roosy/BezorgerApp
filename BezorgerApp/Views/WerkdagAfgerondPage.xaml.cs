@@ -1,4 +1,4 @@
-namespace CasusRitAfronden.Views;
+namespace BezorgerApp.Views;
 
 public partial class WerkdagAfgerondPage : ContentPage
 {
@@ -6,4 +6,10 @@ public partial class WerkdagAfgerondPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private async void GoToMainPage(object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("//MainPage");
+	}
+		
 }

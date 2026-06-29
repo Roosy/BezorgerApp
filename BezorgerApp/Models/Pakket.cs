@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CasusRitAfronden.Models
+namespace BezorgerApp.Models
 {
     public class Pakket
     {

@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CasusRitAfronden.Views.WerkdagAfgerondPage">
+             x:Class="BezorgerApp.Views.WerkdagAfgerondPage">
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
@@ -20,9 +20,9 @@
         </Border>
 
         <Button Text="Uitloggen"
-                Command="{Binding UitloggenCommand}"
                 BackgroundColor="Gray"
-                TextColor="White"/>
+                TextColor="White"
+                Clicked="GoToMainPage"/>
 
     </VerticalStackLayout>
 

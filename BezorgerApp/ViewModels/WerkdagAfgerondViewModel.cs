@@ -1,10 +1,10 @@
-﻿using CasusRitAfronden.Models;
+﻿using BezorgerApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace CasusRitAfronden.ViewModels
+namespace BezorgerApp.ViewModels
 {
     public class WerkdagAfgerondViewModel
     {

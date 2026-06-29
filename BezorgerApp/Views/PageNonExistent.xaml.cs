@@ -1,4 +1,4 @@
-namespace BezorgerApp;
+namespace BezorgerApp.Views;
 
 public partial class PageNonExistent : ContentPage
 {

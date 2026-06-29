@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CasusRitAfronden.Views.ProbleemMeldingPage"
-             xmlns:models="clr-namespace:CasusRitAfronden.Models"
-             Title="Probleem melding"
-             Shell.NavBarIsVisible="False">
+             x:Class="BezorgerApp.Views.ProbleemMeldingPage"
+             xmlns:models="clr-namespace:BezorgerApp.Models"
+             Title="Probleem melding">
+
     <Grid RowDefinitions="Auto,*">
-        
-        <!-- Header -->
-        <Grid
-            BackgroundColor="#2b9e49"
-            Padding="15,50,15,15">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="40"/>
-            </Grid.ColumnDefinitions>
-
-            <ImageButton
-                BackgroundColor="Transparent"
-                Clicked="BackClicked">
-                <ImageButton.Source>
-                    <FontImageSource
-                    Glyph="&#xE5CB;"
-                    FontFamily="MaterialIcons"
-                    Color="White"
-                    Size="28"/>
-                </ImageButton.Source>
-            </ImageButton>
-
-            <Label
-                Grid.Column="1"
-                Text="Probleem melden"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="20"
-                HorizontalOptions="Center"/>
-        </Grid>
-
-        <!-- Inhoud -->
         <ScrollView Grid.Row="1">
 
             <VerticalStackLayout

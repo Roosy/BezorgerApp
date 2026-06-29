@@ -1,4 +1,4 @@
-﻿using CasusRitAfronden.Models;
+﻿using BezorgerApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Windows.Input;
 using System.Collections.ObjectModel;
 
 
-namespace CasusRitAfronden.ViewModels
+namespace BezorgerApp.ViewModels
 {
     public class RitAfrondenViewModel : INotifyPropertyChanged
     {
