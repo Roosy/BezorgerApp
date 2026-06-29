@@ -1,14 +1,28 @@
-namespace BezorgerApp;
+using BezorgerApp.Models;
+using BezorgerApp.Views;
+
+namespace BezorgerApp.Views;
 
 public partial class DeliveryComplete : ContentPage
 {
-	public DeliveryComplete()
+    private Rit _rit;
+    public DeliveryComplete(Rit rit)
 	{
 		InitializeComponent();
+        _rit = rit;
 	}
 
-    private async void GoToDeliveryRegistration(object sender, EventArgs e)
+    public async Task ToonVolgendeStop()
     {
-        await Navigation.PushAsync(new DeliveryRegistration());
+        _rit._stopCount++;
+
+        if (_rit.AfleverStops != null && _rit._stopCount < _rit.AfleverStops.Count)
+        {
+            await Shell.Current.GoToAsync(nameof(DeliveryRegistration));
+        }
+        else
+        {
+            await Shell.Current.GoToAsync(nameof(RitAfrondenPage));
+        }
     }
 }

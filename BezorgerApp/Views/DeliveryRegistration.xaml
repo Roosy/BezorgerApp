@@ -44,14 +44,14 @@
             BackgroundColor="Green"
             VerticalOptions="End"
             HorizontalOptions="End"
-            Clicked="GoToDeliveryComplete">></Button>
+            Clicked="GoToDeliveryComplete"></Button>
 
         <Button
-            Text="Levering niet gelukt"
+            Text="Probleem melden"
             BackgroundColor="Red"
             VerticalOptions="End"
             HorizontalOptions="Start"
-            Clicked="GoToDeliveryNotComplete"></Button>
+            Clicked="GoToProbleemMeldingPage"></Button>
 
     </VerticalStackLayout>
 </ContentPage> 

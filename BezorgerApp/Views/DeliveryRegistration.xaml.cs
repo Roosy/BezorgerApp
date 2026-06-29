@@ -1,3 +1,5 @@
+using BezorgerApp.Views;
+
 namespace BezorgerApp;
 
 public partial class DeliveryRegistration : ContentPage
@@ -22,8 +24,8 @@ public partial class DeliveryRegistration : ContentPage
         await Navigation.PushAsync(new PageNonExistent());
     }
 
-    private async void GoToDeliveryNotComplete(object sender, EventArgs e)
+    private async void GoToProbleemMeldingPage(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new PageNonExistent());
+        await Navigation.PushAsync(new ProbleemMeldingPage());
     }
 }

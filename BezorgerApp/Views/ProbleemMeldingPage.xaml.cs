@@ -1,13 +1,13 @@
 using System.Collections.ObjectModel;
 
-namespace CasusRitAfronden.Views;
+namespace BezorgerApp.Views;
 
 public partial class ProbleemMeldingPage : ContentPage
 {
     private ObservableCollection<ImageSource> _photos = new();
     public ProbleemMeldingPage()
 	{
-		InitializeComponent();
+        InitializeComponent();
     }
 
     private async void BackClicked(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-namespace CasusRitAfronden.Views;
+namespace BezorgerApp.Views;
 
 public partial class WerkdagAfgerondPage : ContentPage
 {
