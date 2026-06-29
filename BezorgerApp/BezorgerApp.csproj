@@ -65,22 +65,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="PageNonExistent.xaml.cs">
+	  <Compile Update="Views\PageNonExistent.xaml.cs">
 	    <DependentUpon>PageNonExistent.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="DeliveryComplete.xaml">
+	  <MauiXaml Update="Views\DeliveryComplete.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DeliveryRegistration.xaml">
+	  <MauiXaml Update="Views\DeliveryRegistration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PageNonExistent.xaml">
+	  <MauiXaml Update="Views\PageNonExistent.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ScanPage.xaml">
+	  <MauiXaml Update="Views\ProbleemMeldingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RitAfrondenPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ScanPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\WerkdagAfgerondPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

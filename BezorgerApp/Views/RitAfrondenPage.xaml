@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CasusRitAfronden.Views.RitAfrondenPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Rit samenvatting"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Border>
+            <VerticalStackLayout>
+                <Label Text="Totaal leveringen" />
+                <Label Text="{Binding TotaalLeveringen}" FontSize="20"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border>
+            <VerticalStackLayout>
+                <Label Text="Succesvol geleverd" />
+                <Label Text="{Binding SuccesvolGeleverd}" FontSize="20"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border>
+            <VerticalStackLayout>
+                <Label Text="Problemen" />
+                <Label Text="{Binding Problemen}" FontSize="20"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border>
+            <VerticalStackLayout>
+                <Label Text="Overgebleven" />
+                <Label Text="{Binding Overgebleven}" FontSize="20"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Button Text="Rit afronden"
+                Command="{Binding AfrondenCommand}"
+                BackgroundColor="Red"
+                TextColor="White"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CasusRitAfronden.Views.WerkdagAfgerondPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Werkdag afgerond"
+               FontSize="26"
+               HorizontalOptions="Center" />
+
+        <Border Padding="15">
+            <VerticalStackLayout Spacing="10">
+
+                <Label Text="Totaal bezorgingen: {Binding Totaal}" />
+                <Label Text="Succesvol: {Binding Succesvol}" />
+                <Label Text="Problemen: {Binding Problemen}" />
+                <Label Text="Afstand: {Binding Afstand}" />
+
+            </VerticalStackLayout>
+        </Border>
+
+        <Button Text="Uitloggen"
+                Command="{Binding UitloggenCommand}"
+                BackgroundColor="Gray"
+                TextColor="White"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CasusRitAfronden.Views.ProbleemMeldingPage"
+             xmlns:models="clr-namespace:CasusRitAfronden.Models"
+             Title="Probleem melding"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*">
+        
+        <!-- Header -->
+        <Grid
+            BackgroundColor="#2b9e49"
+            Padding="15,50,15,15">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton
+                BackgroundColor="Transparent"
+                Clicked="BackClicked">
+                <ImageButton.Source>
+                    <FontImageSource
+                    Glyph="&#xE5CB;"
+                    FontFamily="MaterialIcons"
+                    Color="White"
+                    Size="28"/>
+                </ImageButton.Source>
+            </ImageButton>
+
+            <Label
+                Grid.Column="1"
+                Text="Probleem melden"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- Inhoud -->
+        <ScrollView Grid.Row="1">
+
+            <VerticalStackLayout
+                Padding="16"
+                Spacing="16">
+
+                <!-- Probleem keuze -->
+                <Border
+                    Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                    <VerticalStackLayout Padding="16">
+
+                        <Label
+                            Text="Wat is het probleem?"
+                            FontAttributes="Bold"/>
+
+                        <RadioButton Content="Pakket geweigerd"/>
+                        <RadioButton Content="Adres niet gevonden"/>
+                        <RadioButton Content="Pakket niet aanwezig"/>
+                        <RadioButton Content="Anders"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- Foto -->
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Foto toevoegen (optioneel)"
+                        FontAttributes="Bold"/>
+
+                    <Border
+                        Stroke="#D0D0D0"
+                        StrokeDashArray="4,4">
+
+                        <VerticalStackLayout
+                            Padding="30"
+                            HorizontalOptions="Center">
+
+                            <Image
+                                Source="camera.png"
+                                HeightRequest="40"/>
+
+                            <Label
+                                Text="Foto maken"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+
+                    </Border>
+
+                </VerticalStackLayout>
+
+                <!-- Opmerking -->
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Opmerking (optioneel)"
+                        FontAttributes="Bold"/>
+
+                    <Editor
+                        Placeholder="Typ hier je opmerking..."
+                        HeightRequest="120"/>
+
+                </VerticalStackLayout>
+
+                <!-- Versturen -->
+                <Button
+                    Text="Verzenden"
+                    BackgroundColor="#5A31F4"
+                    TextColor="White"/>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>
