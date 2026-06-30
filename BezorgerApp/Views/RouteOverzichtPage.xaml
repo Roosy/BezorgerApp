@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BezorgerApp.Views.RouteOverzichtPage"
+             Title="Route overzicht">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Route overzicht"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                <VerticalStackLayout Padding="16" Spacing="10">
+
+                    <Label Text="Route informatie"
+                           FontAttributes="Bold"
+                           FontSize="18" />
+
+                    <Grid RowDefinitions="Auto,Auto,Auto"
+                          ColumnDefinitions="*,Auto"
+                          RowSpacing="8">
+
+                        <Label Text="Aantal stops"
+                               Grid.Row="0" />
+
+                        <Label Text="28"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
+
+                        <Label Text="Geschatte duur"
+                               Grid.Row="1" />
+
+                        <Label Text="7u 15m"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
+
+                        <Label Text="Startpunt"
+                               Grid.Row="2" />
+
+                        <Label Text="Matrix Depot"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
+
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+           
+            <Label Text="Stops"
+                   FontAttributes="Bold"
+                   FontSize="18" />
+
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                <Grid Padding="12"
+                      ColumnDefinitions="Auto,Auto,*,Auto"
+                      ColumnSpacing="12">
+
+                    <Label Text="1"
+                           FontAttributes="Bold"
+                           TextColor="#5A31F4"
+                           VerticalOptions="Center" />
+
+                    <Label Text="08:30"
+                           Grid.Column="1"
+                           VerticalOptions="Center" />
+
+                    <VerticalStackLayout Grid.Column="2">
+                        <Label Text="Kerkstraat 12"
+                               FontAttributes="Bold" />
+                        <Label Text="2000 Antwerpen"
+                               FontSize="13"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+
+                    <Label Text="Nog te leveren"
+                           Grid.Column="3"
+                           TextColor="Gray"
+                           VerticalOptions="Center" />
+
+                </Grid>
+            </Border>
+
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                <Grid Padding="12"
+                      ColumnDefinitions="Auto,Auto,*,Auto"
+                      ColumnSpacing="12">
+
+                    <Label Text="2"
+                           FontAttributes="Bold"
+                           TextColor="#5A31F4"
+                           VerticalOptions="Center" />
+
+                    <Label Text="09:15"
+                           Grid.Column="1"
+                           VerticalOptions="Center" />
+
+                    <VerticalStackLayout Grid.Column="2">
+                        <Label Text="Meir 45"
+                               FontAttributes="Bold" />
+                        <Label Text="2000 Antwerpen"
+                               FontSize="13"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+
+                    <Label Text="Nog te leveren"
+                           Grid.Column="3"
+                           TextColor="Gray"
+                           VerticalOptions="Center" />
+
+                </Grid>
+            </Border>
+
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                <Grid Padding="12"
+                      ColumnDefinitions="Auto,Auto,*,Auto"
+                      ColumnSpacing="12">
+
+                    <Label Text="3"
+                           FontAttributes="Bold"
+                           TextColor="#5A31F4"
+                           VerticalOptions="Center" />
+
+                    <Label Text="10:00"
+                           Grid.Column="1"
+                           VerticalOptions="Center" />
+
+                    <VerticalStackLayout Grid.Column="2">
+                        <Label Text="Lange Nieuwstraat 123"
+                               FontAttributes="Bold" />
+                        <Label Text="2000 Antwerpen"
+                               FontSize="13"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+
+                    <Label Text="Nog te leveren"
+                           Grid.Column="3"
+                           TextColor="Gray"
+                           VerticalOptions="Center" />
+
+                </Grid>
+            </Border>
+
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+                <Grid Padding="12"
+                      ColumnDefinitions="Auto,Auto,*,Auto"
+                      ColumnSpacing="12">
+
+                    <Label Text="4"
+                           FontAttributes="Bold"
+                           TextColor="#5A31F4"
+                           VerticalOptions="Center" />
+
+                    <Label Text="10:45"
+                           Grid.Column="1"
+                           VerticalOptions="Center" />
+
+                    <VerticalStackLayout Grid.Column="2">
+                        <Label Text="Nationalestraat 1"
+                               FontAttributes="Bold" />
+                        <Label Text="2000 Antwerpen"
+                               FontSize="13"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+
+                    <Label Text="Nog te leveren"
+                           Grid.Column="3"
+                           TextColor="Gray"
+                           VerticalOptions="Center" />
+
+                </Grid>
+            </Border>
+
+            <Button Text="Route starten"
+                    BackgroundColor="#5A31F4"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="RouteStarten_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

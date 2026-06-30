@@ -1,100 +1,89 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BezorgerApp.MainPage"
              Title="Matrix Inc">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
-            
-
-            <Grid BackgroundColor="Purple"
-                    HeightRequest="150"
-                    Padding="20">
-
-                <Label Text=""
-                         FontSize="24"
-                         TextColor="White"
-                         VerticalOptions="Center"
-                         HorizontalOptions="Start"/>
-
-                <Label Text="Matrix Inc"
-                         FontSize="20"
-                         FontAttributes="Bold"
-                         TextColor="White"
-                         VerticalOptions="Center"
-                         HorizontalOptions="Center"/>
-
-                <Label Text=""
-                         FontSize="22"
-                         TextColor="White"
-                         VerticalOptions="Center"
-                         HorizontalOptions="End"/>
-            </Grid>
-
-            
-            <VerticalStackLayout Padding="20,0,20,0">
-                <Label Text="Goedendag"
-                       FontSize="16"
-                       FontAttributes="Bold"/>
-
-                <Label Text="Klaar voor je route vandaag?"
-                       FontSize="14"
-                       TextColor="Gray"/>
+        <VerticalStackLayout Padding="20" Spacing="16">
 
 
-            </VerticalStackLayout>
+            <Label Text="Goedendag"
+                   FontSize="18"
+                   FontAttributes="Bold" />
 
-            <Border Margin="20"
-                    Padding="20"
-                    BackgroundColor="White"
-                    Stroke="LightGray">
+            <Label Text="Klaar voor je route vandaag?"
+                   FontSize="14"
+                   TextColor="Gray" />
 
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15"/>
-                </Border.StrokeShape>
-                
-                <Grid>
-                    <Grid RowDefinitions="Auto,Auto,Auto"
-                          ColumnDefinitions="*,Auto" >
+            <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
 
+                <VerticalStackLayout Padding="16" Spacing="12">
 
-                    <Label Text="Leveringen"
-                           FontSize="16"
+                    <Label Text="Route samenvatting"
                            FontAttributes="Bold"
-                           Grid.Row="0"/>
+                           FontSize="18" />
+
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                          ColumnDefinitions="*,Auto"
+                          RowSpacing="10">
+
+                        <Label Text="Leveringen vandaag"
+                               Grid.Row="0" />
+
+                        <Label Text="28"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
 
                         <Label Text="Pakketten"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           Grid.Row="1"/>
+                               Grid.Row="1" />
 
+                        <Label Text="36"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
 
                         <Label Text="Verwachte duur"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               Grid.Row="2"/>
+                               Grid.Row="2" />
 
+                        <Label Text="7u 15m"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
+
+                        <Label Text="Startlocatie"
+                               Grid.Row="3" />
+
+                        <Label Text="Matrix Depot"
+                               Grid.Row="3"
+                               Grid.Column="1"
+                               FontAttributes="Bold" />
 
                     </Grid>
-                </Grid>
-
+                </VerticalStackLayout>
             </Border>
 
-                <Button Text="Pakketten laden"
-                    HeightRequest="55"
-                    CornerRadius="15"
-                    Clicked="GoToScanPage"/>
+            <Button Text="Pakketten laden"
+                    BackgroundColor="#5A31F4"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="GoToScanPage" />
 
             <Button Text="Toon levering"
-                    HeightRequest="55"
-                    CornerRadius="15"
-                    Clicked="GoToDeliveryRegistration"/>
-            
+                    BackgroundColor="#5A31F4"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="GoToDeliveryRegistration" />
+
             <Button Text="Werkdag Afsluiten"
-                    HeightRequest="55"
-                    CornerRadius="15"
-                    Clicked="GoToWerkdagAfgerondPage"/>
-                    
+                    BackgroundColor="#5A31F4"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="GoToWerkdagAfgerondPage" />
+
         </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>
