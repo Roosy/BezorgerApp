@@ -14,11 +14,6 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new ScanPage());
     }
 
-    private async void GoToDeliveryRegistration(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new DeliveryRegistration());
-    }
-
     private async void GoToWerkdagAfgerondPage(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new WerkdagAfgerondPage());

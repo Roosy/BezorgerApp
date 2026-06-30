@@ -26,17 +26,97 @@
         
         <!--listview voor pakketjes list als we een db hebben hiervoor?-->
 
-		<Button
-            Text="Pakketjes"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-			Clicked="GoToDeliveryPackages"></Button>
+        <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
 
-        <Button
-            Text="Pakketjes scannen"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Clicked="GoToPackageScan"></Button>
+            <VerticalStackLayout Padding="16" Spacing="10">
+
+                <Label x:Name="AantalLabel"
+                           Text="Pakketten"
+                           FontAttributes="Bold" />
+
+                <CollectionView x:Name="PakkettenList"
+                                    HeightRequest="220">
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Border Stroke="#E0E0E0"
+                                        StrokeThickness="1"
+                                        Margin="0,4">
+
+                                <Grid Padding="12"
+                                          ColumnDefinitions="*,Auto">
+
+                                    <Label Text="{Binding Barcode}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Center" />
+
+                                    <Label Text="Gescand"
+                                               Grid.Column="1"
+                                               TextColor="Green"
+                                               VerticalOptions="Center" />
+
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Stroke="#E0E0E0"
+                    StrokeThickness="1">
+
+            <VerticalStackLayout Padding="16" Spacing="12">
+
+                <Label Text="Barcode scanner"
+                           FontAttributes="Bold"
+                           FontSize="18" />
+
+                <Border Stroke="#D0D0D0"
+                            StrokeThickness="1"
+                            StrokeDashArray="4,4"
+                            HeightRequest="150">
+
+                    <VerticalStackLayout Padding="20"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             Spacing="8">
+
+                        <Label Text="[   BARCODE   ]"
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center" />
+
+                        <Label Text="Richt de barcode in het kader"
+                                   FontSize="13"
+                                   TextColor="Gray"
+                                   HorizontalOptions="Center" />
+
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </Border>
+
+
+        <VerticalStackLayout Spacing="8">
+
+            <Label Text="Barcode handmatig invoeren"
+                       FontAttributes="Bold" />
+
+            <Entry x:Name="BarcodeEntry"
+                       Placeholder="Bijv. PKT10002349" />
+
+            <Button Text="Pakket scannen"
+                        BackgroundColor="#5A31F4"
+                        TextColor="White"
+                        Clicked="ScanPakket_Clicked" />
+
+        </VerticalStackLayout>
 
         <!--Deze in een grid (en betere kleuren skull emoji):-->
         
@@ -51,7 +131,7 @@
             Text="Probleem melden"
             BackgroundColor="Red"
             VerticalOptions="End"
-            HorizontalOptions="Start"
+            HorizontalOptions="End"
             Clicked="GoToProbleemMeldingPage"></Button>
 
     </VerticalStackLayout>

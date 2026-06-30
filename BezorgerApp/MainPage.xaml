@@ -71,12 +71,6 @@
                     HeightRequest="50"
                     Clicked="GoToScanPage" />
 
-            <Button Text="Toon levering"
-                    BackgroundColor="#5A31F4"
-                    TextColor="White"
-                    HeightRequest="50"
-                    Clicked="GoToDeliveryRegistration" />
-
             <Button Text="Werkdag Afsluiten"
                     BackgroundColor="#5A31F4"
                     TextColor="White"
