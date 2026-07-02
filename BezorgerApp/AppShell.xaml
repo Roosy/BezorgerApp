@@ -8,18 +8,18 @@
     Title="BezorgerApp">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-    
+    Title="Home"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+
     <ShellContent
-        Title="Berichten"
-        ContentTemplate="{DataTemplate View:PageNonExistent}"
-        Route="PageNonExistent" />
+    Title="Berichten"
+    ContentTemplate="{DataTemplate View:PageNonExistent}"
+    Route="BerichtenPage" />
 
     <ShellContent
     Title="Profiel"
     ContentTemplate="{DataTemplate View:PageNonExistent}"
-    Route="PageNonExistent" />
+    Route="ProfielPage" />
 
 </Shell>
